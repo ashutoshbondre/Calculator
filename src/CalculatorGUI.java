@@ -1,6 +1,6 @@
 /** 
 
-Description: Uses CreateButton class and OrderOfOperations class to simplify code and
+Description:  uses CreateButton class and OrderOfOperations class to simplify code and
 		also uses getActionEvent() to identify button being pressed
 		Can accept multiple inputs and uses order of operations to calculate currect answer
  
@@ -16,7 +16,8 @@ import java.awt.event.*;
 import java.text.DecimalFormat;
 import java.lang.Math;
 
-public class CalculatorGUI {
+public class CalculatorGUI 
+{
 
     CreateButton one, two, three, four, five, six, seven, 
         eight, nine, dot, zero, addition, subtract,
@@ -93,6 +94,7 @@ public class CalculatorGUI {
 	    	button = event.getActionCommand();
         	displayBox.setText(displayBox.getText() + button);
         	input = input + button;
+
         }
     }
 	
